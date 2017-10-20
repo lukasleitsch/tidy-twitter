@@ -2,6 +2,10 @@
 
 A node script for tidy up your Twitter timeline. All Tweets that are older than 2 months will be deleted every night.
 
+## Requirements
+
+- nodejs > 8 
+
 ## Installation
 
 1. Clone the repo `git clone https://github.com/lukasleitsch/tidy-twitter`
@@ -19,7 +23,7 @@ PATH=/package/host/localhost/nodejs-8/bin:/package/host/localhost/php-7.0/bin:/b
 30 0 * * * node ~/tidy-twitter/index.js
 ```
 
-After you open your cronjob file with `crontab -e` you have to add the `PATH` of node. You first line should be look similar to the first line.
+After you open your cronjob file with `crontab -e` you have to add the `PATH` of node. Your first line should be look similar to the first line.
 
 Every night at 00:30 the cronjob runs the script and tidy up your Twitter timeline.
 
