@@ -19,11 +19,8 @@ A node script for tidy up your Twitter timeline. All Tweets that are older than 
 (This example works on [Uberspace](http://uberspace.de))
 
 ```
-PATH=/package/host/localhost/nodejs-8/bin:/package/host/localhost/php-7.0/bin:/bin:/usr/bin
-30 0 * * * node ~/tidy-twitter/index.js
+30 0 * * * node ~/tidy-twitter/index.js > /dev/null 2>&1
 ```
-
-After you open your cronjob file with `crontab -e` you have to add the `PATH` of node. Your first line should be look similar to the first line.
 
 Every night at 00:30 the cronjob runs the script and tidy up your Twitter timeline.
 
