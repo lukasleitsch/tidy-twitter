@@ -1,10 +1,10 @@
 # Tidy Twitter
 
-A node script for tidy up your Twitter timeline. All Tweets that are older than 2 months will be deleted every night.
+A node script for tidy up your Twitter timeline. All Tweets that are older than 3 months will be deleted every night.
 
 ## Requirements
 
-- nodejs > 8 
+- nodejs > 12
 
 ## Installation
 
